@@ -2,22 +2,23 @@
 @import "reset.scss";
 
 #header_sub{
-    width: 100%; height: 300px; position: relative; background: #cfcfcf;
+    width: 100%; height: 80px; position: relative; background: rgb(123, 165, 213);
     .inner{
         width: 1180px; height: 100%; 
         position: absolute; top: 0%; left: 0%; bottom: 0%; right: 0%;
         margin: auto;
         .wrap{
-            position: absolute; top: 70px; left: 0;
+            position: absolute; top: 20px; left: 0;
             a{
                 img{
-                    width: 9vw; opacity: 0.8;
+                    width: 7vw; opacity: 0.8;
                 }
             }
         }
         .menuWeb{
+            width: 100%;
             #gnb{
-                position: absolute; top: 80px; right: 0;
+                position: absolute; top: 20px; right: 0;
                 li{
                     float: left;
                     a{
@@ -50,6 +51,32 @@
 
         .util{
             position: absolute; top: 0; right: 0;
+        }
+    }
+}
+
+.content{
+    width:100%; padding:0 0 150px; 
+
+    .sub_visual{
+        width:100%; height:250px; background:rgb(207, 223, 250); 
+        margin-bottom:100px; 
+    }
+    .inner{
+        width:1180px; margin:0 auto; 
+        min-height:500px; 
+
+        h1{
+            font:normal 50px/1 'arial'; color:#000; 
+            margin-bottom:60px; 
+
+            span{
+                font:normal 20px/1 '맑은 고딕'; color:#aaa; 
+
+                &::before{
+                    content:'/'; margin-right:20px; margin-left:10px; 
+                }
+            }
         }
     }
 }
