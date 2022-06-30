@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300;900&family=Karla:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300;900&family=Karla:wght@200&family=Tajawal:wght@200;300;500&display=swap");
 * {
   margin: 0px;
   padding: 0px;
@@ -19,6 +19,7 @@ a {
   height: 80px;
   position: relative;
   background: rgb(123, 165, 213);
+  box-shadow: 0px 0px 20px 0px rgb(123, 165, 213);
 }
 #header_sub .inner {
   width: 1180px;
@@ -89,26 +90,28 @@ a {
   width: 100%;
   height: 250px;
   background: rgb(207, 223, 250);
-  margin-bottom: 100px;
+  margin-bottom: 80px;
 }
 .content .inner {
   width: 1180px;
   margin: 0 auto;
   min-height: 500px;
+  border-top: 2px solid rgb(123, 165, 213);
+  position: relative;
 }
-.content .inner h1 {
-  font: normal 50px/1 "arial";
-  color: #000;
-  margin-bottom: 60px;
-}
-.content .inner h1 span {
-  font: normal 20px/1 "맑은 고딕";
-  color: #aaa;
-}
-.content .inner h1 span::before {
-  content: "/";
-  margin-right: 20px;
-  margin-left: 10px;
+.content .inner .subtitle {
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 50px;
+  font-family: "Tajawal";
+  font-weight: 200;
+  color: #555;
+  background: #fff;
+  padding: 0px 20px;
+  border: 1px solid rgb(123, 165, 213);
+  border-radius: 100px;
 }
 
 #footer_sub {
@@ -208,6 +211,189 @@ a {
   text-decoration: none;
 }
 
+#header_sub {
+  width: 100%;
+  height: 80px;
+  position: relative;
+  background: rgb(123, 165, 213);
+  box-shadow: 0px 0px 20px 0px rgb(123, 165, 213);
+}
+#header_sub .inner {
+  width: 1180px;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  bottom: 0%;
+  right: 0%;
+  margin: auto;
+}
+#header_sub .inner .wrap {
+  position: absolute;
+  top: 20px;
+  left: 0;
+}
+#header_sub .inner .wrap a img {
+  width: 7vw;
+  opacity: 0.8;
+}
+#header_sub .inner .menuWeb {
+  width: 100%;
+}
+#header_sub .inner .menuWeb #gnb {
+  position: absolute;
+  top: 20px;
+  right: 0;
+}
+#header_sub .inner .menuWeb #gnb li {
+  float: left;
+}
+#header_sub .inner .menuWeb #gnb li a {
+  display: block;
+  padding-bottom: 10px;
+  margin: 14px 60px;
+  font-size: 20px;
+  font-family: "Karla";
+  line-height: 1;
+  color: #efefef;
+  position: relative;
+}
+#header_sub .inner .menuWeb #gnb li a:last-child {
+  margin-right: 0px;
+}
+#header_sub .inner .menuWeb #gnb li a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  background-color: #fff;
+  height: 2px;
+  width: 0;
+  transition: 0.7s;
+}
+#header_sub .inner .menuWeb #gnb li a:hover::before {
+  width: 100%;
+}
+#header_sub .inner .util {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.content {
+  width: 100%;
+  padding: 0 0 150px;
+}
+.content .sub_visual {
+  width: 100%;
+  height: 250px;
+  background: rgb(207, 223, 250);
+  margin-bottom: 80px;
+}
+.content .inner {
+  width: 1180px;
+  margin: 0 auto;
+  min-height: 500px;
+  border-top: 2px solid rgb(123, 165, 213);
+  position: relative;
+}
+.content .inner .subtitle {
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 50px;
+  font-family: "Tajawal";
+  font-weight: 200;
+  color: #555;
+  background: #fff;
+  padding: 0px 20px;
+  border: 1px solid rgb(123, 165, 213);
+  border-radius: 100px;
+}
+
+#footer_sub {
+  width: 100%;
+  background-color: #cfcfcf;
+}
+#footer_sub .inner {
+  width: 1180px;
+  margin: 0 auto;
+  padding: 50px 0px;
+}
+#footer_sub .inner ul {
+  width: 100%;
+  border-bottom: 1px solid #999;
+  display: flex;
+  justify-content: right;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+#footer_sub .inner ul li {
+  margin-right: 20px;
+}
+#footer_sub .inner ul li a {
+  font-size: 15px;
+  font-family: "Tajawal";
+  font-weight: bold;
+  color: #777;
+}
+#footer_sub .inner .wrap {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+#footer_sub .inner .wrap .pic {
+  width: 220px;
+  margin-right: 20px;
+}
+#footer_sub .inner .wrap .pic img {
+  width: 150px;
+  padding: 10px;
+}
+#footer_sub .inner .wrap article {
+  width: 220px;
+}
+#footer_sub .inner .wrap article:nth-of-type(1) {
+  text-align: right;
+}
+#footer_sub .inner .wrap article:nth-of-type(1) h4 {
+  font-size: 15px;
+  font-family: "Tajawal";
+  font-weight: bold;
+  line-height: 2;
+  color: #777;
+}
+#footer_sub .inner .wrap article:nth-of-type(2) p {
+  font-size: 15px;
+  font-family: "Frank Ruhl Libre";
+  line-height: 2;
+}
+#footer_sub .inner .wrap article:nth-of-type(4) h4 {
+  font-size: 20px;
+  font-family: "Tajawal";
+  color: #555;
+}
+#footer_sub .inner .wrap article:nth-of-type(4) h3 {
+  font-size: 20px;
+  color: #777;
+  line-height: 2;
+  margin-bottom: 40px;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+ul, ol, li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
 fieldset {
   border: none;
 }
@@ -287,11 +473,89 @@ table {
   margin-top: 5px;
 }
 
+.vidList {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 100px;
+}
+.vidList article {
+  width: 100%;
+  height: 300px;
+  border: 1px solid #555;
+  margin-bottom: 40px;
+  display: flex;
+}
+.vidList article .pic {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.vidList article .pic > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.vidList article .con {
+  width: 100%;
+  height: 40%;
+  padding: 20px;
+}
+.vidList article .con h2 {
+  font-family: "arial";
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: bold;
+  color: #444;
+  margin-bottom: 15px;
+}
+.vidList article .con p {
+  font-family: "arial";
+  font-size: 14px;
+  line-height: 1.4;
+  color: #666;
+  margin-bottom: 20px;
+}
+.vidList article .con span {
+  font-family: "arial";
+  font-size: 16px;
+  line-height: 1;
+  font-weight: bold;
+  color: orange;
+  margin-bottom: 15px;
+}
+
+figure.pop {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  overflow: hidden;
+  padding: 5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+figure.pop .btnClose {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  color: #fff;
+  cursor: pointer;
+}
+
 #header {
   width: 100%;
   height: 80px;
-  position: relative;
-  background: rgb(123, 165, 213);
+  position: sticky;
+  top: 0px;
+  background: rgba(123, 165, 213, 0.8);
+  box-shadow: 0px 0px 10px 0px rgb(123, 165, 213);
+  z-index: 2;
 }
 #header .inner {
   width: 1180px;
@@ -379,8 +643,8 @@ table {
 }
 #banner .inner .copy h1 {
   font-size: 50px;
-  font-family: "Frank Ruhl Libre";
-  font-weight: 900;
+  font-family: "Tajawal";
+  font-weight: 200;
   line-height: 1;
   color: #efefef;
 }
