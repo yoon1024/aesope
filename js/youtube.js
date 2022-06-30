@@ -24,13 +24,22 @@ fetch(url)
     items.map((item)=>{
 
         let title = item.snippet.title;
+        if(title.length > 30){
+            title = title.substr(0,30) + "...";
+        }
         let con = item.snippet.description;
+        if(con.length > 300){
+            con = con.substr(0,300) + "...";
+        }
         let date = item.snippet.publishedAt;
+        date = date.split("T")[0];
         
         result +=`
             <article>
                 <a href="${item.snippet.resourceId.videoId}" class="pic">
+                    <div></div><div></div><div></div><div></div>
                     <img src="${item.snippet.thumbnails.medium.url}" alt="">
+                    <p>show more</p>
                 </a>
                 <div class="con">
                     <h2>${title}</h2>
@@ -57,7 +66,7 @@ vidList.addEventListener("click",(e)=>{
 
     pop.innerHTML = `
                     <iframe src="https://www.youtube.com/embed/${vidId}"frameborder="0" width="100%" height="100%" allowfullscreen></iframe>
-                    <span class="btnClose">close</span>
+                    <span class="btnClose"><i class="fa-solid fa-arrow-right-from-bracket"></i></span>
     `;
 
     vidList.append(pop);
@@ -70,7 +79,7 @@ vidList.addEventListener("click",(e)=>{
     const pop = vidList.querySelector(".pop");
     //if 괄호 안에는 불린 값이 와야 되는데 밑에처럼 pop 이런 식으로 쓰면 그냥 pop이 있냐 없냐를 물어보는 것
     if(pop){
-        const close = pop.querySelector("span");
+        const close = pop.querySelector("span i");
         if(e.target == close) pop.remove();
     }
 
