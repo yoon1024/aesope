@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aesope portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/main.js"></script>
+    <script defer src="js/join.js"></script>
+    <script src="https://kit.fontawesome.com/31e84a9307.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header id="header_sub">    
+        <div class="inner">            
+            <div class="wrap">
+                <a href="index.html"><img src="img/logo.png" alt="이솝 로고"></a>
+            </div>
+
+            <nav class="menuWeb">
+                <ul id="gnb">
+                    <li><a href="#">PRODUCT</a></li>
+                    <!-- 제품 소개 -->
+                    <li><a href="#">BRAND STORY</a></li>
+                    <!-- 회사 소개, 브랜드 스토리, 함께하는 사람들(ex.조직도) -->
+                    <li><a href="#">YOUTUBE</a></li>
+                    <li><a href="#">GALLERY</a></li>
+                    <li><a href="#">STORE</a></li>
+                    <!-- 지역별 스토어 위치 -->
+                </ul>
+
+                <div class="util">
+
+                    <li><a href="join.html">join</i></a></li>
+                    <li><a href="#">login</i></a></li>
+
+                </div>
+            </nav>
+
+
+        </div>
+    </header>
+
+    <section class="join">
+        <div class="inner">
+            <h1>MEMBERSHIP</h1>
+
+            <form action="result.html" method="get" id="member">
+                <fieldset>
+                    <legend class="hidden">회원가입 폼 입력 양식</legend>
+
+                    <table>
+                        <caption class="hidden">회원가입을 위한 아이디, 비밀번호, 이메일, 성별, 학력, 취미, 남기는 말을 입력할 테이블</caption>
+
+                        <tbody>
+                            <tr>
+                                <th scope="row"><label for="userid">USER ID</label></th>
+                                <td><input type="text" name="userid" id="userid" placeholder="아이디를 입력하세요" required></td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row"><label for="pwd1">PASSWORD</label></th>
+                                <td><input type="password" name="pwd1" id="pwd1" placeholder="비밀번호를 입력하세요" required></td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row"><label for="pwd2">Re PASSWORD</label></th>
+                                <td><input type="password" name="pwd2" id="pwd2" placeholder="비밀번호를 재입력하세요" required></td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row"><label for="email">E-mail</label></th>
+                                <td><input type="text" name="email" id="email" placeholder="이메일주소를 입력하세요" required></td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row"><label for="mbti">MBTI</label></th>
+                                <td>
+                                    <select name="mbti" id="mbti">
+                                        <option value="">MBTI 성격 유형을 선택해 주세요</option>
+                                        <option value="ISTJ">ISTJ</option>
+                                        <option value="ISFJ">ISFJ</option>
+                                        <option value="INFJ">INFJ</option>
+                                        <option value="INTJ">INTJ</option>
+                                        <option value="ISTP">ISTP</option>
+                                        <option value="ISFP">ISFP</option>
+                                        <option value="INFP">INFP</option>
+                                        <option value="INTP">INTP</option>
+                                        <option value="ESTP">ESTP</option>
+                                        <option value="ESFP">ESFP</option>
+                                        <option value="ENFP">ENFP</option>
+                                        <option value="ENTP">ENTP</option>
+                                        <option value="ESTJ">ESTJ</option>
+                                        <option value="ESFJ">ESFJ</option>
+                                        <option value="ENFJ">ENFJ</option>
+                                        <option value="ENTJ">ENTJ</option>
+
+                                    </select>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row">GENDER</th>
+                                <td>
+                                    <label for="male">Male</label>
+                                    <input type="radio" name="gender" id="male" value="male">
+
+                                    <label for="female">Female</label>
+                                    <input type="radio" name="gender" id="female" value="female">
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row">INTEREST</th>
+                                <td>
+                                    <label for="skincare">SKINCARE</label>
+                                    <input type="checkbox" name="product" id="skincare" value="skincare">
+
+                                    <label for="body&hand">BODY&HAND</label>
+                                    <input type="checkbox" name="product" id="body&hand" value="body&hand">
+
+                                    <label for="hair">HAIR</label>
+                                    <input type="checkbox" name="product" id="hair" value="hair">
+
+                                    <label for="perfume">PERFUME</label>
+                                    <input type="checkbox" name="product" id="perfume" value="perfume">
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row"><label for="comments">COMMENTS</label></th>
+                                <td>
+                                    <textarea name="comments" id="comments" placeholder="남기는 말을 입력하세요" required></textarea>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <th colspan="2">
+                                    <input type="reset" value="cancle">
+                                    <input type="submit" value="submit">
+                                </th>
+                            </tr>
+                        </tbody>
+                    </table>
+                </fieldset>
+            </form>
+        </div>
+    </section>
+    
+
+    <footer id="footer_sub">
+        <div class="inner">
+            <ul>
+                <li><a href="#">Policy</a></li>
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Custmer</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+
+            <div class="wrap">
+                <div class="pic">
+                    <img src="img/logo.png" alt="">
+                </div>
+                <article>
+                    <li>
+                        <h4>Company</h4>
+                        <h4>CEO</h4>
+                        <h4>Online marketing Number</h4>
+                        <h4>Corporate registration number</h4>
+                        <h4>Adresse</h4>
+                    </li>
+                </article>
+                <article>
+                    <li>
+                        <p>&copy;Aesope</p>
+                        <p>lorem</p>
+                        <p>2014-lorem-02300</p>
+                        <p>220-88-56014</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </li>
+                </article>
+                <article></article>
+                <article>
+                    <h4>Service</h4>
+                    <h3>1800-1987</h3>
+                    <h4>Email</h4>
+                    <h3>aesop@aesop.com </h3>
+                </article>
+            </div>
+
+        </div>
+    </footer>
+
+
+</body>
+</html>

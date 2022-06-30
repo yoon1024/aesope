@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300;900&family=Karla:wght@200&display=swap");
 * {
   margin: 0px;
@@ -11,6 +12,246 @@ ul, ol, li {
 
 a {
   text-decoration: none;
+}
+
+#header_sub {
+  width: 100%;
+  height: 300px;
+  position: relative;
+  background: #cfcfcf;
+}
+#header_sub .inner {
+  width: 1180px;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  bottom: 0%;
+  right: 0%;
+  margin: auto;
+}
+#header_sub .inner .wrap {
+  position: absolute;
+  top: 70px;
+  left: 0;
+}
+#header_sub .inner .wrap a img {
+  width: 9vw;
+  opacity: 0.8;
+}
+#header_sub .inner .menuWeb #gnb {
+  position: absolute;
+  top: 80px;
+  right: 0;
+}
+#header_sub .inner .menuWeb #gnb li {
+  float: left;
+}
+#header_sub .inner .menuWeb #gnb li a {
+  display: block;
+  padding-bottom: 10px;
+  margin: 14px 60px;
+  font-size: 20px;
+  font-family: "Karla";
+  line-height: 1;
+  color: #efefef;
+  position: relative;
+}
+#header_sub .inner .menuWeb #gnb li a:last-child {
+  margin-right: 0px;
+}
+#header_sub .inner .menuWeb #gnb li a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  background-color: #fff;
+  height: 2px;
+  width: 0;
+  transition: 0.7s;
+}
+#header_sub .inner .menuWeb #gnb li a:hover::before {
+  width: 100%;
+}
+#header_sub .inner .util {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+#footer_sub {
+  width: 100%;
+  background-color: #cfcfcf;
+}
+#footer_sub .inner {
+  width: 1180px;
+  margin: 0 auto;
+  padding: 50px 0px;
+}
+#footer_sub .inner ul {
+  width: 100%;
+  border-bottom: 1px solid #999;
+  display: flex;
+  justify-content: right;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+#footer_sub .inner ul li {
+  margin-right: 20px;
+}
+#footer_sub .inner ul li a {
+  font-size: 15px;
+  font-family: "Tajawal";
+  font-weight: bold;
+  color: #777;
+}
+#footer_sub .inner .wrap {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+#footer_sub .inner .wrap .pic {
+  width: 220px;
+  margin-right: 20px;
+}
+#footer_sub .inner .wrap .pic img {
+  width: 150px;
+  padding: 10px;
+}
+#footer_sub .inner .wrap article {
+  width: 220px;
+}
+#footer_sub .inner .wrap article:nth-of-type(1) {
+  text-align: right;
+}
+#footer_sub .inner .wrap article:nth-of-type(1) h4 {
+  font-size: 15px;
+  font-family: "Tajawal";
+  font-weight: bold;
+  line-height: 2;
+  color: #777;
+}
+#footer_sub .inner .wrap article:nth-of-type(2) p {
+  font-size: 15px;
+  font-family: "Frank Ruhl Libre";
+  line-height: 2;
+}
+#footer_sub .inner .wrap article:nth-of-type(4) h4 {
+  font-size: 20px;
+  font-family: "Tajawal";
+  color: #555;
+}
+#footer_sub .inner .wrap article:nth-of-type(4) h3 {
+  font-size: 20px;
+  color: #777;
+  line-height: 2;
+  margin-bottom: 40px;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+ul, ol, li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+ul, ol, li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+fieldset {
+  border: none;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+.hidden {
+  position: absolute;
+  top: -999999px;
+  opacity: 0;
+}
+
+.join {
+  width: 100%;
+  padding: 150px 0;
+}
+.join .inner {
+  width: 1180px;
+  margin: 0 auto;
+}
+.join .inner h1 {
+  font: normal 60px/1 "arial";
+  color: #555;
+  margin-bottom: 50px;
+}
+.join .inner table {
+  border-top: 2px solid #333;
+  border-bottom: 2px solid #333;
+}
+.join .inner table th, .join .inner table td {
+  border-bottom: 1px solid #ddd;
+  padding: 15px 25px;
+}
+.join .inner table th {
+  width: 20%;
+}
+.join .inner table th input[type=reset], .join .inner table th input[type=submit] {
+  width: 30%;
+  height: 40px;
+  border: 1px solid #333;
+  margin: 10px;
+  font: bold 14px/40px "arial";
+  color: #555;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.join .inner table th input[type=reset]:hover, .join .inner table th input[type=submit]:hover {
+  background: #333;
+  color: #fff;
+}
+.join .inner table td {
+  border-left: 1px solid #aaa;
+}
+.join .inner table td input[type=text], .join .inner table td input[type=password], .join .inner table td select {
+  width: 60%;
+  background: rgba(0, 0, 0, 0.03);
+  padding: 10px;
+  border: 1px solid #aaa;
+}
+.join .inner table td input[type=radio], .join .inner table td input[type=checkbox] {
+  margin-right: 30px;
+}
+.join .inner table td textarea {
+  resize: none;
+  width: 60%;
+  height: 150px;
+  background: rgba(0, 0, 0, 0.03);
+  padding: 10px;
+  border: 1px solid #aaa;
+}
+.join .inner table td p {
+  font: 11px/1 "맑은 고딕";
+  color: hotpink;
+  margin-top: 5px;
 }
 
 #header {
@@ -30,9 +271,11 @@ a {
   width: 1180px;
   height: 100%;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 0%;
+  left: 0%;
+  bottom: 0%;
+  right: 0%;
+  margin: auto;
 }
 #header .inner .wrap {
   position: absolute;
@@ -53,12 +296,33 @@ a {
 }
 #header .inner .menuWeb #gnb li a {
   display: block;
-  padding: 14px 40px;
-  font: 20px/1 "Karla";
+  padding-bottom: 10px;
+  margin: 14px 60px;
+  font-size: 20px;
+  font-family: "Karla";
+  line-height: 1;
   color: #efefef;
+  position: relative;
+}
+#header .inner .menuWeb #gnb li a:last-child {
+  margin-right: 0px;
+}
+#header .inner .menuWeb #gnb li a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  background-color: #fff;
+  height: 2px;
+  width: 0;
+  transition: 0.7s;
+}
+#header .inner .menuWeb #gnb li a:hover::before {
+  width: 100%;
 }
 #header .inner .util {
-  opacity: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 #header .inner .copy {
   position: absolute;
@@ -516,49 +780,71 @@ a {
 
 #footer {
   width: 100%;
-  padding: 100px 0;
-  background: rgb(220, 229, 238);
+  background-color: #cfcfcf;
 }
 #footer .inner {
   width: 1180px;
   margin: 0 auto;
-}
-#footer .inner::after {
-  content: "";
-  display: block;
-  clear: both;
-}
-#footer .inner h1 {
-  font: bold 24px/1 "arial";
-  color: #666;
-  float: left;
+  padding: 50px 0px;
 }
 #footer .inner ul {
-  float: right;
+  width: 100%;
+  border-bottom: 1px solid #999;
+  display: flex;
+  justify-content: right;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
 }
 #footer .inner ul li {
-  float: left;
-  margin-left: 20px;
+  margin-right: 20px;
 }
 #footer .inner ul li a {
-  font: bold 14px/1 "arial";
-  color: #666;
-}
-#footer .inner address {
-  width: 100%;
-  font: 14px/1.3 "arial";
+  font-size: 15px;
+  font-family: "Tajawal";
+  font-weight: bold;
   color: #777;
-  margin-bottom: 20px;
-  margin-top: 20px;
-  float: left;
-  border-top: 1px solid #888;
-  padding-top: 20px;
 }
-#footer .inner p {
+#footer .inner .wrap {
+  display: flex;
+  justify-content: space-between;
   width: 100%;
-  font: 12px/1 "arial";
+}
+#footer .inner .wrap .pic {
+  width: 220px;
+  margin-right: 20px;
+}
+#footer .inner .wrap .pic img {
+  width: 150px;
+  padding: 10px;
+}
+#footer .inner .wrap article {
+  width: 220px;
+}
+#footer .inner .wrap article:nth-of-type(1) {
+  text-align: right;
+}
+#footer .inner .wrap article:nth-of-type(1) h4 {
+  font-size: 15px;
+  font-family: "Tajawal";
+  font-weight: bold;
+  line-height: 2;
   color: #777;
-  float: left;
+}
+#footer .inner .wrap article:nth-of-type(2) p {
+  font-size: 15px;
+  font-family: "Frank Ruhl Libre";
+  line-height: 2;
+}
+#footer .inner .wrap article:nth-of-type(4) h4 {
+  font-size: 20px;
+  font-family: "Tajawal";
+  color: #555;
+}
+#footer .inner .wrap article:nth-of-type(4) h3 {
+  font-size: 20px;
+  color: #777;
+  line-height: 2;
+  margin-bottom: 40px;
 }
 
 /*# sourceMappingURL=style.css.map */
