@@ -477,8 +477,71 @@ table {
   margin-top: 5px;
 }
 
-#header_sub {
+#header_sub_youtube {
+  width: 100%;
+  height: 80px;
+  position: relative;
   background: rgb(72, 111, 98);
+}
+#header_sub_youtube .inner {
+  width: 1180px;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  bottom: 0%;
+  right: 0%;
+  margin: auto;
+}
+#header_sub_youtube .inner .wrap {
+  position: absolute;
+  top: 20px;
+  left: 0;
+}
+#header_sub_youtube .inner .wrap a img {
+  width: 7vw;
+  opacity: 0.8;
+}
+#header_sub_youtube .inner .menuWeb {
+  width: 100%;
+}
+#header_sub_youtube .inner .menuWeb #gnb {
+  position: absolute;
+  top: 20px;
+  right: 0;
+}
+#header_sub_youtube .inner .menuWeb #gnb li {
+  float: left;
+}
+#header_sub_youtube .inner .menuWeb #gnb li a {
+  display: block;
+  padding-bottom: 10px;
+  margin: 14px 60px;
+  font-size: 20px;
+  font-family: "Karla";
+  line-height: 1;
+  color: #efefef;
+  position: relative;
+}
+#header_sub_youtube .inner .menuWeb #gnb li a:last-child {
+  margin-right: 0px;
+}
+#header_sub_youtube .inner .menuWeb #gnb li a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  background-color: #fff;
+  height: 2px;
+  width: 0;
+  transition: 0.7s;
+}
+#header_sub_youtube .inner .menuWeb #gnb li a:hover::before {
+  width: 100%;
+}
+#header_sub_youtube .inner .util {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 .youtube .sub_visual img {
@@ -492,7 +555,7 @@ table {
 .youtube .inner .subtitle {
   border: 1px solid rgb(72, 111, 98);
 }
-.youtube .vidList {
+.youtube .inner .vidList {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -500,7 +563,7 @@ table {
   align-items: flex-start;
   margin-top: 150px;
 }
-.youtube .vidList article {
+.youtube .inner .vidList article {
   width: 100%;
   height: 300px;
   margin-bottom: 80px;
@@ -509,75 +572,75 @@ table {
   padding: 20px;
   transition: 0.5s;
 }
-.youtube .vidList article:hover {
+.youtube .inner .vidList article:hover {
   background: #efefef;
 }
-.youtube .vidList article .pic {
+.youtube .inner .vidList article .pic {
   display: block;
   width: 100%;
   height: 100%;
   position: relative;
   overflow: hidden;
 }
-.youtube .vidList article .pic:hover div:nth-child(1) {
+.youtube .inner .vidList article .pic:hover div:nth-child(1) {
   width: 90%;
   transition: all 0.5s;
 }
-.youtube .vidList article .pic:hover div:nth-child(2) {
+.youtube .inner .vidList article .pic:hover div:nth-child(2) {
   height: 90%;
   transition: all 0.5s;
   transition-delay: 0.5s;
 }
-.youtube .vidList article .pic:hover div:nth-child(3) {
+.youtube .inner .vidList article .pic:hover div:nth-child(3) {
   width: 90%;
   transition: all 0.5s;
   transition-delay: 1s;
 }
-.youtube .vidList article .pic:hover div:nth-child(4) {
+.youtube .inner .vidList article .pic:hover div:nth-child(4) {
   height: 90%;
   transition: all 0.5s;
   transition-delay: 1.5s;
 }
-.youtube .vidList article .pic:hover p {
+.youtube .inner .vidList article .pic:hover p {
   opacity: 1;
   transition: 0.5s;
 }
-.youtube .vidList article .pic div {
+.youtube .inner .vidList article .pic div {
   position: absolute;
   background-color: rgba(250, 250, 250, 0.8);
   opacity: 0.9;
   z-index: 3;
 }
-.youtube .vidList article .pic div:nth-child(1) {
+.youtube .inner .vidList article .pic div:nth-child(1) {
   top: 5%;
   left: 5%;
   height: 10px;
   width: 0;
 }
-.youtube .vidList article .pic div:nth-child(2) {
+.youtube .inner .vidList article .pic div:nth-child(2) {
   top: 5%;
   right: 5%;
   width: 10px;
   height: 0;
 }
-.youtube .vidList article .pic div:nth-child(3) {
+.youtube .inner .vidList article .pic div:nth-child(3) {
   bottom: 5%;
   right: 5%;
   height: 10px;
   width: 0;
 }
-.youtube .vidList article .pic div:nth-child(4) {
+.youtube .inner .vidList article .pic div:nth-child(4) {
   bottom: 5%;
   left: 5%;
   width: 10px;
   height: 0;
 }
-.youtube .vidList article .pic > img {
+.youtube .inner .vidList article .pic > img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.youtube .vidList article .pic > p {
+.youtube .inner .vidList article .pic > p {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -589,12 +652,12 @@ table {
   opacity: 0;
   z-index: 5;
 }
-.youtube .vidList article .con {
+.youtube .inner .vidList article .con {
   width: 100%;
   height: 40%;
   padding: 20px;
 }
-.youtube .vidList article .con h2 {
+.youtube .inner .vidList article .con h2 {
   font-family: "Gowun Dodum";
   font-size: 20px;
   line-height: 1.2;
@@ -602,14 +665,14 @@ table {
   color: #444;
   margin-bottom: 15px;
 }
-.youtube .vidList article .con p {
+.youtube .inner .vidList article .con p {
   font-family: "Gowun Dodum";
   font-size: 14px;
   line-height: 1.4;
   color: #666;
   margin-bottom: 20px;
 }
-.youtube .vidList article .con span {
+.youtube .inner .vidList article .con span {
   font-family: "Karla";
   font-size: 16px;
   line-height: 1;
@@ -617,7 +680,7 @@ table {
   color: rgb(123, 165, 213);
   margin-bottom: 15px;
 }
-.youtube figure.pop {
+.youtube .inner figure.pop {
   width: 100%;
   height: 100vh;
   position: fixed;
@@ -630,7 +693,7 @@ table {
   justify-content: center;
   align-items: center;
 }
-.youtube figure.pop .btnClose {
+.youtube .inner figure.pop .btnClose {
   position: absolute;
   top: 10px;
   right: 100px;
@@ -639,36 +702,51 @@ table {
   font-size: 50px;
 }
 
+#header_sub {
+  background: rgb(118, 107, 86);
+}
+
 .store {
   width: 100%;
 }
-.store #map {
+.store .sub_visual img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.store .inner {
+  border-top: 2px solid rgb(118, 107, 86);
+}
+.store .inner .subtitle {
+  border: 1px solid rgb(118, 107, 86);
+}
+.store .inner #map {
   float: left;
   width: 80%;
   height: 500px;
-  border: 1px solid rgb(123, 165, 213);
+  border: 1px solid rgb(118, 107, 86);
   margin-bottom: 20px;
   margin-top: 50px;
   border-radius: 10px;
   box-shadow: 0px 0px 5px 0px #999;
 }
-.store::after {
+.store .inner::after {
   content: "";
   display: block;
   clear: both;
 }
-.store .traffic {
+.store .inner .traffic {
   margin-top: 50px;
   float: right;
 }
-.store .traffic li {
+.store .inner .traffic li {
   margin-bottom: 30px;
 }
-.store .traffic li a {
+.store .inner .traffic li a {
   display: block;
   width: 200px;
   height: 40px;
-  background: rgb(123, 165, 213);
+  background: rgb(118, 107, 86);
   font-size: 15px;
   line-height: 40px;
   font-family: "Tajawal";
@@ -678,17 +756,17 @@ table {
   border-radius: 10px;
   transition: 0.5s;
 }
-.store .traffic li a:hover {
+.store .inner .traffic li a:hover {
   background: #666;
 }
-.store .branch {
+.store .inner .branch {
   margin-top: 130px;
   float: right;
 }
-.store .branch li {
+.store .inner .branch li {
   margin-bottom: 20px;
 }
-.store .branch li a {
+.store .inner .branch li a {
   display: block;
   width: 200px;
   height: 40px;
@@ -696,15 +774,15 @@ table {
   line-height: 40px;
   font-family: "Tajawal";
   font-weight: 300;
-  color: rgb(123, 165, 213);
+  color: rgb(118, 107, 86);
   text-align: center;
-  border: 1px solid rgb(123, 165, 213);
+  border: 1px solid rgb(118, 107, 86);
   border-radius: 10px;
   transition: 0.5s;
 }
-.store .branch li a:hover {
+.store .inner .branch li a:hover {
   color: #fff;
-  background: rgb(123, 165, 213);
+  background: rgb(118, 107, 86);
 }
 
 #header {
@@ -1072,13 +1150,17 @@ table {
 
 #product {
   width: 100%;
+  height: 900px;
   padding: 100px 0px;
   background-color: rgb(220, 229, 238);
 }
 #product .inner {
   width: 1180px;
+  height: 100%;
   margin: 0 auto;
   text-align: center;
+  position: relative;
+  overflow: hidden;
 }
 #product .inner h3 {
   font-size: 17px;
@@ -1100,19 +1182,23 @@ table {
   color: #555;
 }
 #product .inner .wrap {
+  width: 100%;
   display: flex;
   margin-top: 50px;
+  position: absolute;
+  top: 20%;
+  left: 0;
 }
 #product .inner .wrap article {
   margin-right: 20px;
 }
 #product .inner .wrap article img {
-  background-color: rgb(230, 230, 230);
   width: 380px;
   height: 380px;
   object-fit: contain;
   border-radius: 50%;
   margin-bottom: 20px;
+  transition: 0.2s;
 }
 #product .inner .wrap article h3 {
   font-size: 20px;
@@ -1128,6 +1214,19 @@ table {
 }
 #product .inner .wrap article:last-child {
   margin-right: 0px;
+}
+#product .inner .wrap article:hover img {
+  transform: rotateZ(20deg);
+}
+#product .inner .prev {
+  position: absolute;
+  top: 50%;
+  left: 0%;
+}
+#product .inner .next {
+  position: absolute;
+  top: 50%;
+  right: 0%;
 }
 
 #brand {

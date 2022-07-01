@@ -1,5 +1,56 @@
-#header_sub{
-    background: rgb(72, 111, 98);
+
+#header_sub_youtube{
+    width: 100%; height: 80px; position: relative; background: rgb(72, 111, 98);
+    .inner{
+        width: 1180px; height: 100%; 
+        position: absolute; top: 0%; left: 0%; bottom: 0%; right: 0%;
+        margin: auto;
+        .wrap{
+            position: absolute; top: 20px; left: 0;
+            a{
+                img{
+                    width: 7vw; opacity: 0.8;
+                }
+            }
+        }
+        .menuWeb{
+            width: 100%;
+            #gnb{
+                position: absolute; top: 20px; right: 0;
+                li{
+                    float: left;
+                    a{
+                        display: block; 
+                        padding-bottom: 10px;
+                        margin: 14px 60px;
+                        font-size: 20px;
+                        font-family: 'Karla';
+                        line-height: 1;
+                        color: #efefef;
+                        position: relative;
+                        &:last-child{
+                            margin-right: 0px;
+                        }
+                        &::before{
+                            content: '';
+                            position: absolute; bottom: 0;
+                            background-color: #fff;
+                            height: 2px;
+                            width: 0;
+                            transition: 0.7s;
+                        }
+                        &:hover::before{
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+
+        .util{
+            position: absolute; top: 0; right: 0;
+        }
+    }
 }
 
 
@@ -15,125 +66,126 @@
         .subtitle{
             border: 1px solid rgb(72, 111, 98);
         }
-    }
-    .vidList{
-        width: 100%; display: flex; 
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: flex-start;
-    
-        margin-top: 150px;
-    
+        .vidList{
+            width: 100%; display: flex; 
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: flex-start;
         
-    
-        article{
-            width: 100%; height: 300px;
-            margin-bottom: 80px;
-            display: flex;
-            position: relative; 
-            padding: 20px;
-            transition: 0.5s;
-            &:hover{ background: #efefef;}
+            margin-top: 150px;
         
             
-    
-            .pic{
-                display: block;
-                width: 100%; height: 100%;
-                
-                position: relative; 
-                overflow: hidden ;
-                &:hover div:nth-child(1){width: 90%; transition: all 0.5s;}
-                &:hover div:nth-child(2){height: 90%; transition: all 0.5s; transition-delay: 0.5s;}
-                &:hover div:nth-child(3){width: 90%; transition: all 0.5s; transition-delay: 1s;}
-                &:hover div:nth-child(4){height: 90%; transition: all 0.5s; transition-delay: 1.5s;}
-                &:hover p{
-                    opacity: 1; transition: 0.5s;
-                }
-                div{
-                    position: absolute;
-                    background-color: rgba(250,250,250,0.8); 
-                    opacity: 0.9;
-                    z-index: 3;
-                    &:nth-child(1){
-                        top: 5%; left:5%; height: 10px; width: 0;
         
+            article{
+                width: 100%; height: 300px;
+                margin-bottom: 80px;
+                display: flex;
+                position: relative; 
+                padding: 20px;
+                transition: 0.5s;
+                &:hover{ background: #efefef;}
+            
+                
+        
+                .pic{
+                    display: block;
+                    width: 100%; height: 100%;
+                    
+                    position: relative; 
+                    overflow: hidden ;
+                    &:hover div:nth-child(1){width: 90%; transition: all 0.5s;}
+                    &:hover div:nth-child(2){height: 90%; transition: all 0.5s; transition-delay: 0.5s;}
+                    &:hover div:nth-child(3){width: 90%; transition: all 0.5s; transition-delay: 1s;}
+                    &:hover div:nth-child(4){height: 90%; transition: all 0.5s; transition-delay: 1.5s;}
+                    &:hover p{
+                        opacity: 1; transition: 0.5s;
                     }
-                    &:nth-child(2){
-                        top: 5%; right: 5%; width: 10px; height: 0;
-                        
-                        
+                    div{
+                        position: absolute;
+                        background-color: rgba(250,250,250,0.8); 
+                        opacity: 0.9;
+                        z-index: 3;
+                        &:nth-child(1){
+                            top: 5%; left:5%; height: 10px; width: 0;
+            
+                        }
+                        &:nth-child(2){
+                            top: 5%; right: 5%; width: 10px; height: 0;
+                            
+                            
+                        }
+                        &:nth-child(3){
+                            bottom: 5%; right: 5%; height: 10px; width: 0;
+                                                          
+                        }
+                        &:nth-child(4){
+                            bottom: 5%; left: 5%; width: 10px; height: 0;
+                          
+                        }
+                    } 
+        
+        
+        
+                    >img{
+                        width: 100%; height: 100%; object-fit: cover;
                     }
-                    &:nth-child(3){
-                        bottom: 5%; right: 5%; height: 10px; width: 0;
-                                                      
+                    >p{
+                        position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);
+                        font-size: 50px;
+                        font-family: 'arial';
+                        font-weight: bold;
+                        color: rgb(250,250,250);
+                        opacity: 0;
+                        z-index: 5;
                     }
-                    &:nth-child(4){
-                        bottom: 5%; left: 5%; width: 10px; height: 0;
-                      
-                    }
-                } 
-    
-    
-    
-                >img{
-                    width: 100%; height: 100%; object-fit: cover;
                 }
-                >p{
-                    position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);
-                    font-size: 50px;
-                    font-family: 'arial';
-                    font-weight: bold;
-                    color: rgb(250,250,250);
-                    opacity: 0;
-                    z-index: 5;
+                .con{
+                    width: 100%; height: 40%; padding: 20px;
+                    h2{
+                        font-family: 'Gowun Dodum';
+                        font-size: 20px;
+                        line-height: 1.2;
+                        font-weight: bold;
+                        color: #444;
+                        margin-bottom: 15px;
+                    }
+                    p{
+                        font-family: 'Gowun Dodum';
+                        font-size: 14px;
+                        line-height: 1.4;
+                        color: #666;
+                        margin-bottom: 20px;
+                    }
+                    span{
+                        font-family: 'Karla';
+                        font-size: 16px;
+                        line-height: 1;
+                        font-weight: bold;
+                        color: rgb(123, 165, 213);
+                        margin-bottom: 15px;
+                    }
                 }
             }
-            .con{
-                width: 100%; height: 40%; padding: 20px;
-                h2{
-                    font-family: 'Gowun Dodum';
-                    font-size: 20px;
-                    line-height: 1.2;
-                    font-weight: bold;
-                    color: #444;
-                    margin-bottom: 15px;
-                }
-                p{
-                    font-family: 'Gowun Dodum';
-                    font-size: 14px;
-                    line-height: 1.4;
-                    color: #666;
-                    margin-bottom: 20px;
-                }
-                span{
-                    font-family: 'Karla';
-                    font-size: 16px;
-                    line-height: 1;
-                    font-weight: bold;
-                    color: rgb(123, 165, 213);
-                    margin-bottom: 15px;
-                }
+        }
+        
+        figure.pop{
+            width: 100%; height: 100vh;
+            position: fixed; top: 0; left: 0;
+            background: rgba(0,0,0,0.8);
+        
+            overflow: hidden;
+        
+            padding: 5vw;
+            display: flex; justify-content: center; align-items: center;
+        
+            .btnClose{
+                position: absolute; top:10px; right: 100px; color: #fff;
+                cursor: pointer;
+                font-size: 50px;
             }
         }
     }
     
-    figure.pop{
-        width: 100%; height: 100vh;
-        position: fixed; top: 0; left: 0;
-        background: rgba(0,0,0,0.8);
-    
-        overflow: hidden;
-    
-        padding: 5vw;
-        display: flex; justify-content: center; align-items: center;
-    
-        .btnClose{
-            position: absolute; top:10px; right: 100px; color: #fff;
-            cursor: pointer;
-            font-size: 50px;
-        }
-    }
 
 }
 

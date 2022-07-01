@@ -1,41 +1,64 @@
+const product = document.querySelector("#product");
+const wrap = product.querySelector(".wrap");
+const article = product.querySelectorAll(".wrap article");
+const prev = product.querySelector(".prev");
+const next = product.querySelector(".next");
 
-// const banner = document.querySelector("#banner");
-// const slider = banner.querySelector(".inner .slider");
-// const ul = banner.querySelector(".inner .slider ul");
-// const lis = ul.querySelectorAll(".inner .slider ul li");
 
-// const prev = banner.querySelector(".prev");
-// const next = banner.querySelector(".next");
+const brand = document.querySelector("#brand");
+const panel = brand.querySelector(".panel");
+const btns = brand.querySelectorAll(".wrap .btns li"); 
 
-// ul.style.left = "-100%"
 
-// next.addEventListener("click",(e)=>{
-//     e.preventDefault();
 
-//         new Anim(ul,{
-//             prop : 'left',
-//             value : "-200%",
-//             duration : speed,
-//             callback :()=>{
-//                 ul.style.left = "-100%";
-//                 ul.append(ul.firstElementChild);
-//             }
-//         })
+wrap.style.left = "-33.333%"
+
+prev.addEventListener("click",(e)=>{
+    e.preventDefault();
+
+
+        new Anim(wrap,{
+            prop : 'left',
+            value : "0%",
+            duration : 700,
+            callback :()=>{
+                wrap.style.left = "-33.333%";
+                wrap.prepend(wrap.lastElementChild);
+            }
+        })
+
+
     
+})
 
-// })
 
-// prev.addEventListener("click",(e)=>{
-//     e.preventDefault();
+next.addEventListener("click",(e)=>{
+    e.preventDefault();
 
+    new Anim(wrap,{
+        prop : 'left',
+        value : "-66.666%",
+        duration : 700,
+        callback :()=>{
+            wrap.style.left = "-33.333%";
+            wrap.append(wrap.firstElementChild);
+        }
+    })
+
+
+})
+
+
+btns.forEach((el,index)=>{
+    el.addEventListener("click",(e)=>{
+        e.preventDefault();
+
+        panel.style.marginLeft = -100 * [index] + "%";
     
-//         new Anim(ul,{
-//             prop : 'left',
-//             value : "0%",
-//             duration :speed,
-//             callback : ()=>{
-//                 ul.style.left = "-100%";
-//                 ul.prepend(ul.lastElementChild);
-//             }
-//         })
-// })
+        btns.forEach((el)=>{
+        el.classList.remove("on");})
+
+        el.classList.add("on");
+
+    })
+})
