@@ -39,7 +39,7 @@ fetch(url)
                 <a href="${item.snippet.resourceId.videoId}" class="pic">
                     <div></div><div></div><div></div><div></div>
                     <img src="${item.snippet.thumbnails.medium.url}" alt="">
-                    <p>show more</p>
+                    <p>view more</p>
                 </a>
                 <div class="con">
                     <h2>${title}</h2>

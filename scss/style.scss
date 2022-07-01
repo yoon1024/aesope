@@ -6,14 +6,15 @@
 @import "sub_layout.scss";
 @import "join.scss";
 @import "youtube.scss";
+@import "store.scss";
 
 
 #header{
     width: 100%; height: 80px; 
-    // position: fixed;
-    position: sticky; top: 0px;
-    background: rgba(123, 165, 213,0.8);
-    box-shadow: 0px 0px 10px 0px rgb(123, 165, 213); z-index: 2;
+    position: relative;
+    background: rgb(123, 165, 213);
+    // box-shadow: 0px 0px 10px 0px rgb(123, 165, 213); 
+    z-index: 2;
     .inner{
         width: 1180px; height: 100%; 
         position: absolute; top: 0%; left: 0%; bottom: 0%; right: 0%;
@@ -63,6 +64,9 @@
 
         .util{
             position: absolute; top: 0; right: 0;
+            li{
+                float: left; margin-right: 20px;
+            }
         }
 
         // .copy{
@@ -86,7 +90,8 @@
 #banner{
     width: 100%; height: 600px; background: #000;
     .inner{
-        width: 100%; height: 100%; position: relative; 
+        width: 100%; height: 100%; position: relative;
+
         img{
             width: 100%; height: 100%; object-fit: cover; opacity: 0.7;
         }
@@ -124,9 +129,6 @@
     }
 
 }
-
-
-
 
 
 #intro{
@@ -504,6 +506,7 @@
             .pic{
                 width: 220px; margin-right: 20px;
                 img{
+                    filter: brightness(60%);
                     width: 150px;
                     padding: 10px;
                 }
@@ -523,7 +526,7 @@
                 &:nth-of-type(2){
                     p{
                         font-size: 15px;
-                        font-family: 'Frank Ruhl Libre';
+                        font-family: 'Tajawal';
                         line-height: 2;
                     }
                 }
@@ -531,11 +534,12 @@
                     h4{
                         font-size: 20px;
                         font-family: 'Tajawal';
-                        color: #555;
+                        color: #333;
                     }
                     h3{
                         font-size:20px;
-                        color: #777;
+                        font-family: 'Tajawal';
+                        color: #666;
                         line-height: 2;                    
                         margin-bottom: 40px;
                     }

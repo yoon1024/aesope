@@ -7,7 +7,6 @@
     <title>aesope portfolio_sub</title>
     <link rel="stylesheet" href="css/style.css">
     <script defer src="js/main.js"></script>
-    <script defer src="js/youtube.js"></script>
     <script src="https://kit.fontawesome.com/31e84a9307.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -20,10 +19,13 @@
             <nav class="menuWeb">
                 <ul id="gnb">
                     <li><a href="#">PRODUCT</a></li>
+                    <!-- 제품 소개 -->
                     <li><a href="#">BRAND STORY</a></li>
-                    <li><a href="#">YOUTUBE</a></li>
+                    <!-- 회사 소개, 브랜드 스토리, 함께하는 사람들(ex.조직도) -->
+                    <li><a href="youtube.html">YOUTUBE</a></li>
                     <li><a href="#">GALLERY</a></li>
                     <li><a href="#">STORE</a></li>
+                    <!-- 지역별 스토어 위치 -->
                 </ul>
 
                 <div class="util">
@@ -38,17 +40,26 @@
         </div>
     </header>
 
-    <section class="content youtube">
-        <div class="sub_visual">
-            <img src="img/visual_youtube.jpg" alt="">
-        </div>
+    <section class="content store">
+        <div class="sub_visual"></div>
         <div class="inner">
-            <p class="subtitle">YOUTUBE of <strong>Aesop</strong></p>
+            <p class="subtitle">Store location of <strong>Aesop</strong></p>
 
-            <div class="vidList">
-            </div>
+            <div id="map"></div>
 
+            <ul class="traffic">
+                <li><a href="#"> turn on traffic information</a></li>
+                <li class="on"><a href="#">turn off traffic information</a></li>
+            </ul>
+
+            <ul class="branch">
+                <li class="on" data-index="0"><a href="#">head office</a></li>
+                <li data-index="1"><a href="#">branch 1</a></li>
+                <li data-index="2"><a href="#">branch 2</a></li>
+                <li data-index="3"><a href="#">branch 3</a></li>
+            </ul>
         </div>
+
     </section>
 
     <footer id="footer_sub">
