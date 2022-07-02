@@ -1,6 +1,7 @@
 
+
 #header_sub_gallery{
-    width: 100%; height: 80px; position: relative; background: rgb(139, 139, 139);
+    width: 100%; height: 80px; position: relative; background: rgb(230, 205, 173);
     .inner{
         width: 1180px; height: 100%; 
         position: absolute; top: 0%; left: 0%; bottom: 0%; right: 0%;
@@ -26,7 +27,7 @@
                         font-size: 20px;
                         font-family: 'Karla';
                         line-height: 1;
-                        color: #efefef;
+                        color: #4e2b03;
                         position: relative;
                         &:last-child{
                             margin-right: 0px;
@@ -34,7 +35,7 @@
                         &::before{
                             content: '';
                             position: absolute; bottom: 0;
-                            background-color: #fff;
+                            background-color: #4e2b03;
                             height: 2px;
                             width: 0;
                             transition: 0.7s;
@@ -62,9 +63,93 @@
         }
     }
     .inner{
-        border-top: 2px solid rgb(139, 139, 139) ;
+        border-top: 2px solid rgb(230, 205, 173) ;
         .subtitle{
-            border: 1px solid rgb(139, 139, 139);
+            border: 1px solid rgb(230, 205, 173);
+            color: #4e2b03;
+        }
+
+        main{
+            position: relative;
+            #searchBox{ 
+                padding: 100px 50px 0px;
+                overflow: hidden;
+                font-size: 0;
+                position: absolute; right: 30px;
+                
+
+                input[type=text]{
+                    width: 250px; height: 30px;
+                    background: #efefef; 
+                    // border: 1px solid #ddd;
+                    border: none;
+                }
+                .btnSearch{
+                    width: 80px; height: 30px;
+                    background: rgb(230, 205, 173);
+                    font-size: 12px;
+                    font-family: 'Karla';
+                    font-weight: bold;
+                    line-height: 30px;
+                    color: #4e2b03;
+                    text-align: center;
+                    margin-left: 10px;
+                    cursor: pointer;
+                    border-radius: 10px;
+                    border: none;
+                    vertical-align: top;
+                
+                }
+
+            }
+
+            #wrapg{
+                width: 100%; padding: 200px 50px 50px 50px; overflow: hidden;
+                .loading{
+                    width: 100px;
+                    position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);
+                    transition: 1s;
+                    &.off{
+                        opacity: 0;
+                    }
+                }
+                #list{
+                    opacity: 0; 
+                    transform: translateY(100px); transition: 1s;
+    
+                    &::after{content: ''; display: block; clear: both;}
+    
+                    li{
+                        width: (100% / 4);float: left; padding: 10px;;
+                        div{
+                            width: 100% ; background: #efefef; padding: 20px;
+                            border-radius: 5px; 
+                            // box-shadow: 5px 5px 20px rgba(0,0,0,0.1);
+                            border: 1px solid rgb(230, 205, 173);
+                            a{
+                                width: 100%;
+                                img{
+                                    width: 100%;
+                                    
+                                }
+                            }
+                            p{
+                                font-size: 12px;
+                                font-family: 'Tajawal';
+                                line-height: 1.2;
+                                color: #000;
+                                margin-top: 10px; margin-bottom: 10px;
+                                text-align: center;
+                                
+                            }
+                        }
+                    }
+    
+                    &.on{
+                        opacity: 1; transform: translateY(0px);
+                    }
+                }
+            }
         }
     }
     

@@ -93,7 +93,6 @@ a {
 .content .inner {
   width: 1180px;
   margin: 0 auto;
-  min-height: 500px;
   border-top: 2px solid rgb(123, 165, 213);
   position: relative;
 }
@@ -292,7 +291,6 @@ a {
 .content .inner {
   width: 1180px;
   margin: 0 auto;
-  min-height: 500px;
   border-top: 2px solid rgb(123, 165, 213);
   position: relative;
 }
@@ -916,7 +914,7 @@ table {
   width: 100%;
   height: 80px;
   position: relative;
-  background: rgb(139, 139, 139);
+  background: rgb(230, 205, 173);
 }
 #header_sub_gallery .inner {
   width: 1180px;
@@ -955,7 +953,7 @@ table {
   font-size: 20px;
   font-family: "Karla";
   line-height: 1;
-  color: #efefef;
+  color: #4e2b03;
   position: relative;
 }
 #header_sub_gallery .inner .menuWeb #gnb li a:last-child {
@@ -965,7 +963,7 @@ table {
   content: "";
   position: absolute;
   bottom: 0;
-  background-color: #fff;
+  background-color: #4e2b03;
   height: 2px;
   width: 0;
   transition: 0.7s;
@@ -985,10 +983,100 @@ table {
   object-fit: cover;
 }
 .gallery .inner {
-  border-top: 2px solid rgb(139, 139, 139);
+  border-top: 2px solid rgb(230, 205, 173);
 }
 .gallery .inner .subtitle {
-  border: 1px solid rgb(139, 139, 139);
+  border: 1px solid rgb(230, 205, 173);
+  color: #4e2b03;
+}
+.gallery .inner main {
+  position: relative;
+}
+.gallery .inner main #searchBox {
+  padding: 100px 50px 0px;
+  overflow: hidden;
+  font-size: 0;
+  position: absolute;
+  right: 30px;
+}
+.gallery .inner main #searchBox input[type=text] {
+  width: 250px;
+  height: 30px;
+  background: #efefef;
+  border: none;
+}
+.gallery .inner main #searchBox .btnSearch {
+  width: 80px;
+  height: 30px;
+  background: rgb(230, 205, 173);
+  font-size: 12px;
+  font-family: "Karla";
+  font-weight: bold;
+  line-height: 30px;
+  color: #4e2b03;
+  text-align: center;
+  margin-left: 10px;
+  cursor: pointer;
+  border-radius: 10px;
+  border: none;
+  vertical-align: top;
+}
+.gallery .inner main #wrapg {
+  width: 100%;
+  padding: 200px 50px 50px 50px;
+  overflow: hidden;
+}
+.gallery .inner main #wrapg .loading {
+  width: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 1s;
+}
+.gallery .inner main #wrapg .loading.off {
+  opacity: 0;
+}
+.gallery .inner main #wrapg #list {
+  opacity: 0;
+  transform: translateY(100px);
+  transition: 1s;
+}
+.gallery .inner main #wrapg #list::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.gallery .inner main #wrapg #list li {
+  width: 25%;
+  float: left;
+  padding: 10px;
+}
+.gallery .inner main #wrapg #list li div {
+  width: 100%;
+  background: #efefef;
+  padding: 20px;
+  border-radius: 5px;
+  border: 1px solid rgb(230, 205, 173);
+}
+.gallery .inner main #wrapg #list li div a {
+  width: 100%;
+}
+.gallery .inner main #wrapg #list li div a img {
+  width: 100%;
+}
+.gallery .inner main #wrapg #list li div p {
+  font-size: 12px;
+  font-family: "Tajawal";
+  line-height: 1.2;
+  color: #000;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.gallery .inner main #wrapg #list.on {
+  opacity: 1;
+  transform: translateY(0px);
 }
 
 #header_sub_brandstory {

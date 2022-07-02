@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
     <script defer src="js/main.js"></script>
     <script defer src="js/gallery.js"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
     <script src="https://kit.fontawesome.com/31e84a9307.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -31,8 +32,6 @@
                     <li><a href="#">login</i></a></li>
                 </div>
             </nav>
-
-
         </div>
     </header>
 
@@ -41,14 +40,26 @@
     
     <section class="content gallery">
         <div class="sub_visual">
-            <img src="img/visual_gallery.jpg" alt="">
+            <img src="img/visual_gallery4.png" alt="">
         </div>
 
         <div class="inner">
             <p class="subtitle">Gallery of <strong>Aesop</strong></p>
-            </div>
-        </div>
 
+            <main>
+                <section id="searchBox">
+                    <input type="text" id="search" placeholder="Please enter search word">
+                    <button class="btnSearch">Search</button>
+                </section>
+
+                <section id="wrapg">
+                    <img src="img/logo black.png" class="loading" alt="">
+                    <ul id="list">
+                    </ul>
+                </section>
+            </main>
+
+        </div>
     </section>
 
 
