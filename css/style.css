@@ -412,22 +412,87 @@ table {
   opacity: 0;
 }
 
+#header_sub_join {
+  width: 100%;
+  height: 80px;
+  position: relative;
+  background: rgb(104, 192, 214);
+}
+#header_sub_join .inner {
+  width: 1180px;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  bottom: 0%;
+  right: 0%;
+  margin: auto;
+}
+#header_sub_join .inner .wrap {
+  position: absolute;
+  top: 20px;
+  left: 0;
+}
+#header_sub_join .inner .wrap a img {
+  width: 7vw;
+  opacity: 0.8;
+}
+#header_sub_join .inner .menuWeb {
+  width: 100%;
+}
+#header_sub_join .inner .menuWeb #gnb {
+  position: absolute;
+  top: 20px;
+  right: 0;
+}
+#header_sub_join .inner .menuWeb #gnb li {
+  float: left;
+}
+#header_sub_join .inner .menuWeb #gnb li a {
+  display: block;
+  padding-bottom: 10px;
+  margin: 14px 60px;
+  font-size: 20px;
+  font-family: "Karla";
+  line-height: 1;
+  color: #efefef;
+  position: relative;
+}
+#header_sub_join .inner .menuWeb #gnb li a:last-child {
+  margin-right: 0px;
+}
+#header_sub_join .inner .menuWeb #gnb li a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  background-color: #fff;
+  height: 2px;
+  width: 0;
+  transition: 0.7s;
+}
+#header_sub_join .inner .menuWeb #gnb li a:hover::before {
+  width: 100%;
+}
+#header_sub_join .inner .util {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
 .join {
   width: 100%;
-  padding: 150px 0;
+}
+.join .sub_visual img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .join .inner {
   width: 1180px;
-  margin: 0 auto;
-}
-.join .inner h1 {
-  font: normal 60px/1 "arial";
-  color: #555;
-  margin-bottom: 50px;
 }
 .join .inner table {
-  border-top: 2px solid #333;
   border-bottom: 2px solid #333;
+  margin-top: 100px;
 }
 .join .inner table th, .join .inner table td {
   border-bottom: 1px solid #ddd;
@@ -702,8 +767,71 @@ table {
   font-size: 50px;
 }
 
-#header_sub {
+#header_sub_store {
+  width: 100%;
+  height: 80px;
+  position: relative;
   background: rgb(118, 107, 86);
+}
+#header_sub_store .inner {
+  width: 1180px;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  bottom: 0%;
+  right: 0%;
+  margin: auto;
+}
+#header_sub_store .inner .wrap {
+  position: absolute;
+  top: 20px;
+  left: 0;
+}
+#header_sub_store .inner .wrap a img {
+  width: 7vw;
+  opacity: 0.8;
+}
+#header_sub_store .inner .menuWeb {
+  width: 100%;
+}
+#header_sub_store .inner .menuWeb #gnb {
+  position: absolute;
+  top: 20px;
+  right: 0;
+}
+#header_sub_store .inner .menuWeb #gnb li {
+  float: left;
+}
+#header_sub_store .inner .menuWeb #gnb li a {
+  display: block;
+  padding-bottom: 10px;
+  margin: 14px 60px;
+  font-size: 20px;
+  font-family: "Karla";
+  line-height: 1;
+  color: #efefef;
+  position: relative;
+}
+#header_sub_store .inner .menuWeb #gnb li a:last-child {
+  margin-right: 0px;
+}
+#header_sub_store .inner .menuWeb #gnb li a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  background-color: #fff;
+  height: 2px;
+  width: 0;
+  transition: 0.7s;
+}
+#header_sub_store .inner .menuWeb #gnb li a:hover::before {
+  width: 100%;
+}
+#header_sub_store .inner .util {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 .store {
@@ -783,6 +911,85 @@ table {
 .store .inner .branch li a:hover {
   color: #fff;
   background: rgb(118, 107, 86);
+}
+
+#header_sub_gallery {
+  width: 100%;
+  height: 80px;
+  position: relative;
+  background: rgb(139, 139, 139);
+}
+#header_sub_gallery .inner {
+  width: 1180px;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  bottom: 0%;
+  right: 0%;
+  margin: auto;
+}
+#header_sub_gallery .inner .wrap {
+  position: absolute;
+  top: 20px;
+  left: 0;
+}
+#header_sub_gallery .inner .wrap a img {
+  width: 7vw;
+  opacity: 0.8;
+}
+#header_sub_gallery .inner .menuWeb {
+  width: 100%;
+}
+#header_sub_gallery .inner .menuWeb #gnb {
+  position: absolute;
+  top: 20px;
+  right: 0;
+}
+#header_sub_gallery .inner .menuWeb #gnb li {
+  float: left;
+}
+#header_sub_gallery .inner .menuWeb #gnb li a {
+  display: block;
+  padding-bottom: 10px;
+  margin: 14px 60px;
+  font-size: 20px;
+  font-family: "Karla";
+  line-height: 1;
+  color: #efefef;
+  position: relative;
+}
+#header_sub_gallery .inner .menuWeb #gnb li a:last-child {
+  margin-right: 0px;
+}
+#header_sub_gallery .inner .menuWeb #gnb li a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  background-color: #fff;
+  height: 2px;
+  width: 0;
+  transition: 0.7s;
+}
+#header_sub_gallery .inner .menuWeb #gnb li a:hover::before {
+  width: 100%;
+}
+#header_sub_gallery .inner .util {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.gallery .sub_visual img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.gallery .inner {
+  border-top: 2px solid rgb(139, 139, 139);
+}
+.gallery .inner .subtitle {
+  border: 1px solid rgb(139, 139, 139);
 }
 
 #header {
