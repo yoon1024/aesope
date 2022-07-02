@@ -16,6 +16,9 @@ const slides = banner.querySelector(".slides");
 const bp = banner.querySelector(".prev");
 const bn = banner.querySelector(".next");
 
+
+
+//메인페이지 배너 슬라이드
 slides.style.left = "-100%"
 
 bp.addEventListener("click",(e)=>{
@@ -56,6 +59,7 @@ prev.addEventListener("click",(e)=>{
             prop : 'left',
             value : "0%",
             duration : 700,
+            timer : 10, 
             callback :()=>{
                 wrap.style.left = "-33.333%";
                 wrap.prepend(wrap.lastElementChild);
@@ -70,6 +74,7 @@ next.addEventListener("click",(e)=>{
         prop : 'left',
         value : "-66.666%",
         duration : 700,
+        timer : 10, 
         callback :()=>{
             wrap.style.left = "-33.333%";
             wrap.append(wrap.firstElementChild);

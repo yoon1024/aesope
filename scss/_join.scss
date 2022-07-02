@@ -70,7 +70,6 @@ table{border-collapse: collapse;}
         width: 1180px;
 
         table{
-            // border-top: 2px solid #333;
             border-bottom: 2px solid #333;
             margin-top: 100px;
 
@@ -81,7 +80,7 @@ table{border-collapse: collapse;}
                input[type=reset],input[type=submit]{
                 width: 30%; height: 40px;
                 border: 1px solid #333; margin: 10px;
-                font: bold 14px/40px 'arial'; color: #555; letter-spacing: 2px;
+                font: bold 14px/40px 'Gowun Dodum'; color: #555; letter-spacing: 2px;
                 cursor: pointer; transition: 0.5s;
                 &:hover{
                     background: #333; color: #fff;
@@ -108,7 +107,7 @@ table{border-collapse: collapse;}
                 }
 
                 p{
-                    font: 11px/1 "맑은 고딕";
+                    font: 11px/1 "Gowun Dodum";
                     color: hotpink; margin-top: 5px;
                 }
             }

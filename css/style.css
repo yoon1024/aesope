@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300;900&family=Gowun+Dodum&family=Karla:wght@200&family=Tajawal:wght@200;300;500&display=swap");
 * {
   margin: 0px;
@@ -506,7 +505,7 @@ table {
   height: 40px;
   border: 1px solid #333;
   margin: 10px;
-  font: bold 14px/40px "arial";
+  font: bold 14px/40px "Gowun Dodum";
   color: #555;
   letter-spacing: 2px;
   cursor: pointer;
@@ -537,7 +536,7 @@ table {
   border: 1px solid #aaa;
 }
 .join .inner table td p {
-  font: 11px/1 "맑은 고딕";
+  font: 11px/1 "Gowun Dodum";
   color: hotpink;
   margin-top: 5px;
 }
@@ -990,6 +989,85 @@ table {
 }
 .gallery .inner .subtitle {
   border: 1px solid rgb(139, 139, 139);
+}
+
+#header_sub_brandstory {
+  width: 100%;
+  height: 80px;
+  position: relative;
+  background: rgb(72, 111, 98);
+}
+#header_sub_brandstory .inner {
+  width: 1180px;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  bottom: 0%;
+  right: 0%;
+  margin: auto;
+}
+#header_sub_brandstory .inner .wrap {
+  position: absolute;
+  top: 20px;
+  left: 0;
+}
+#header_sub_brandstory .inner .wrap a img {
+  width: 7vw;
+  opacity: 0.8;
+}
+#header_sub_brandstory .inner .menuWeb {
+  width: 100%;
+}
+#header_sub_brandstory .inner .menuWeb #gnb {
+  position: absolute;
+  top: 20px;
+  right: 0;
+}
+#header_sub_brandstory .inner .menuWeb #gnb li {
+  float: left;
+}
+#header_sub_brandstory .inner .menuWeb #gnb li a {
+  display: block;
+  padding-bottom: 10px;
+  margin: 14px 60px;
+  font-size: 20px;
+  font-family: "Karla";
+  line-height: 1;
+  color: #efefef;
+  position: relative;
+}
+#header_sub_brandstory .inner .menuWeb #gnb li a:last-child {
+  margin-right: 0px;
+}
+#header_sub_brandstory .inner .menuWeb #gnb li a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  background-color: #fff;
+  height: 2px;
+  width: 0;
+  transition: 0.7s;
+}
+#header_sub_brandstory .inner .menuWeb #gnb li a:hover::before {
+  width: 100%;
+}
+#header_sub_brandstory .inner .util {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.brandstory .sub_visual img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.brandstory .inner {
+  border-top: 2px solid rgb(72, 111, 98);
+}
+.brandstory .inner .subtitle {
+  border: 1px solid rgb(72, 111, 98);
 }
 
 #header {
