@@ -1,3 +1,8 @@
+const header = document.querySelector("#header");
+const btnCall = header.querySelector(".btnCall");
+const menuMo = header.querySelector(".menuMo");
+
+
 const product = document.querySelector("#product");
 const wrap = product.querySelector(".wrap");
 const article = product.querySelectorAll(".wrap article");
@@ -15,6 +20,18 @@ const banner = document.querySelector("#banner");
 const slides = banner.querySelector(".slides");
 const bp = banner.querySelector(".prev");
 const bn = banner.querySelector(".next");
+
+
+// 헤더 모바일 메뉴, 햄버거 버튼
+btnCall.addEventListener("click",(e)=>{
+    e.preventDefault();
+
+    btnCall.classList.toggle("on");
+    menuMo.classList.toggle("on");
+    logo.classList.toggle("on");
+    copy.classList.toggle("on");
+
+})
 
 
 
