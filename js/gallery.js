@@ -10,6 +10,11 @@
 
 //flickr.photos.search
 
+const header = document.querySelector("#header_sub_gallery");
+const btnCall = header.querySelector(".btnCall");
+const menuMo = header.querySelector(".menuMo");
+
+
 
 const base = "https://www.flickr.com/services/rest/?";
 const method = "flickr.interestingness.getList";
@@ -25,6 +30,14 @@ const loading = document.querySelector(".loading");
 
 const input = document.querySelector("#search");
 const btn = document.querySelector(".btnSearch")
+
+btnCall.addEventListener("click",(e)=>{
+    e.preventDefault();
+
+    btnCall.classList.toggle("on");
+    menuMo.classList.toggle("on");
+
+})
 
 createList(url);
 

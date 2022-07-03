@@ -2,6 +2,10 @@
 
 // playlist : PL4LRIdOIlx_9Cuw8pXYxkzIEULm8wNhO-
 
+const header = document.querySelector("#header_sub_youtube");
+const btnCall = header.querySelector(".btnCall");
+const menuMo = header.querySelector(".menuMo");
+
 const vidList = document.querySelector(".vidList");
 
 const key = "AIzaSyB07SmnE1cJMVJRKCZmg_kaotLyw9z0IiE";
@@ -9,6 +13,15 @@ const playlistId = "PL4LRIdOIlx_9Cuw8pXYxkzIEULm8wNhO-";
 const num = 7;
 
 const url = `https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&key=${key}&playlistId=${playlistId}&maxResults=${num}`;
+
+
+btnCall.addEventListener("click",(e)=>{
+    e.preventDefault();
+
+    btnCall.classList.toggle("on");
+    menuMo.classList.toggle("on");
+
+})
 
 fetch(url)
 
@@ -28,8 +41,8 @@ fetch(url)
             title = title.substr(0,30) + "...";
         }
         let con = item.snippet.description;
-        if(con.length > 300){
-            con = con.substr(0,300) + "...";
+        if(con.length > 180){
+            con = con.substr(0,180) + "...";
         }
         let date = item.snippet.publishedAt;
         date = date.split("T")[0];

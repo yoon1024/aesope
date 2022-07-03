@@ -2,24 +2,26 @@
 @import "reset.scss";
 
 #header_sub{
-    width: 100%; height: 80px; position: relative; background: rgb(123, 165, 213);
-    // box-shadow: 0px 0px 20px 0px rgb(123, 165, 213);
+    width: 100%; height: 80px; 
+    position: relative;
+    background: rgb(123, 165, 213);
     .inner{
         width: 1180px; height: 100%; 
         position: absolute; top: 0%; left: 0%; bottom: 0%; right: 0%;
         margin: auto;
         .wrap{
-            position: absolute; top: 20px; left: 0;
+            position: absolute; top: 25px; left: 0;
             a{
+                margin-left: 30px;
                 img{
-                    width: 7vw; opacity: 0.8;
-                }
+                    width: 150px; opacity: 0.8;
+                }       
             }
         }
         .menuWeb{
-            width: 100%;
+            width: 100%; 
             #gnb{
-                position: absolute; top: 20px; right: 0;
+                position: absolute; top: 20px; right: 150px;
                 li{
                     float: left;
                     a{
@@ -48,10 +50,127 @@
                     }
                 }
             }
+            .util{
+                position: absolute; top: 50%; right: 0; transform: translateY(-50%);
+                li{
+                    float: left; padding-left: 20px;
+                    a{
+                        font-size: 25px;
+                        color: #dfdfdf;
+                    }
+                }
+            }
+    
+        }
+        .btnCall{
+            width: 20px; height: 20px;
+            position: fixed;
+            top: 30px; right: 20px;
+            z-index: 999;
+            display: none;
+
+
+            &::before{
+                content: ''; display: block; width: 100%; height: 2px; background: #000;
+                position: absolute; top: 0; left: 0;
+                transition: 0.5s;
+                
+            }
+            &::after{
+                content: ''; display: block; width: 100%; height: 2px; background: #000;
+                position: absolute; bottom: 0; left: 0px;
+                transition: 0.5s;  
+            }
+            span{
+                display: block; width: 100%; height: 2px; background: #000;
+                position: absolute; top: 50%; left: 0px;  margin-top: -1px;
+                text-indent: -99999px;
+                
+            }
+
+            &.on{
+
+                &::before{
+                    top: 50%;
+                    transform: rotate(45deg);
+                    margin-top: -1px;
+                    transition: 0.5s;
+                }
+                &::after{
+                    bottom: 50%;
+                    transform: rotate(-45deg);
+                    margin-bottom: -1px;
+                    transition: 0.5s;
+                }
+                span{
+                    display: none;
+                }
+            }
         }
 
-        .util{
-            position: absolute; top: 0; right: 0;
+        .menuMo{
+            width: 300px; height: 100vh; background-color: rgba(171, 188, 207, 0.8) ;
+            position: fixed; top: 0px; left: -700px;
+            z-index: 20;
+            transition: 0.5s;
+            &.on{
+                left: 0px;
+            }
+            h1{
+                padding-top: 50px; padding-left: 10px;
+                border-bottom: 3px solid #efefef;
+                width: 100%;
+                text-align: center;
+                a{
+                    img{
+                        width: 100px;
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+
+            #gnbMo{
+                li{
+                    a{
+                        display: block;
+                        width: 100%; padding: 30px;
+                        border-bottom: 1px solid #fff;
+                        font-size: 20px;
+                        font-weight: bold;
+                        font-family: 'Karla';
+                        color: #fff;
+                        text-align: center;
+                        &:hover{
+                            background: #999;
+                        }
+                    }
+
+                }
+            }
+            #utilMo{
+                width: 100%;
+                display: flex;
+                position: absolute; bottom: 0;
+                li{
+                    width: 100%;
+                    a{
+                        display: block;
+                        width: 100%; padding: 30px;
+                        border-bottom: 1px solid #fff;
+                        font-size: 20px;
+                        font-weight: bold;
+                        font-family: 'Karla';
+                        color: #fff;
+                        text-align: center;
+                        background: #999;
+                        opacity: 0.8;
+
+                        &:hover{
+                            background: rgba(171, 188, 207, 0.8);
+                        }
+                    }
+                }
+            }
         }
     }
 }
@@ -68,6 +187,7 @@
         border-top: 2px solid rgb(123, 165, 213) ;
         position: relative;
         .subtitle{
+            text-align: center;
             position: absolute; top: -40px; left: 50%; transform: translateX(-50%);
             font-size: 50px;
             font-family: 'Tajawal';
@@ -149,4 +269,61 @@
             }
         }
     }
+}
+
+@media screen and (max-width:1179px){
+    #header_sub{
+        width: 100%;
+        .inner{
+            width: 100%; height: 100%; 
+            .wrap{
+                position: absolute; top: 25px; left: 50%; transform: translateX(-50%);
+                transition: 0.5s;
+                a{
+                    img{
+                        width: 150px;
+                    }
+                }
+            }
+            .menuWeb{
+                display: none;    
+            }
+    
+            .btnCall{
+                display: block;
+            }
+        }
+    } 
+    #footer_sub{
+        width: 100%;
+        .inner{
+            width: 100%;
+            .wrap{
+                width: 100%;
+                .pic{
+                    width: 100px; margin-right: 20px;
+                    img{
+                        filter: brightness(60%);
+                        width: 150px;
+                        padding: 10px;
+                    }
+                }
+                article{
+                    &:nth-of-type(3){
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 539px) {
+    #header{
+        width: 100%;
+        .inner{
+            width: 100%; 
+        }
+    }
+   
 }

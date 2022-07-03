@@ -1,5 +1,19 @@
+const header = document.querySelector("#header_sub_join");
+const btnCall = header.querySelector(".btnCall");
+const menuMo = header.querySelector(".menuMo");
+
 const form = document.querySelector("#member");
 const btnSubmit = form.querySelector("input[type=submit]");
+
+
+btnCall.addEventListener("click",(e)=>{
+    e.preventDefault();
+
+    btnCall.classList.toggle("on");
+    menuMo.classList.toggle("on");
+
+})
+
 
 btnSubmit.addEventListener("click",(e)=>{
     if(!istxt("userid", 5)) e.preventDefault();
