@@ -990,45 +990,42 @@ table {
 .join .inner {
   width: 1180px;
 }
-.join .inner table {
-  border-bottom: 2px solid #333;
+.join .inner #member table {
+  margin: 0 auto;
   margin-top: 100px;
 }
-.join .inner table th, .join .inner table td {
-  border-bottom: 1px solid #ddd;
-  padding: 15px 25px;
+.join .inner #member table th, .join .inner #member table td {
+  border-bottom: 1px solid rgb(104, 192, 214);
+  padding: 15px 15px;
+  color: #888;
 }
-.join .inner table th {
+.join .inner #member table th {
   width: 20%;
 }
-.join .inner table th input[type=reset], .join .inner table th input[type=submit] {
+.join .inner #member table th input[type=reset], .join .inner #member table th input[type=submit] {
   width: 30%;
   height: 40px;
-  border: 1px solid #333;
   margin: 10px;
-  font: bold 14px/40px "Gowun Dodum";
-  color: #555;
+  font: bold 14px/40px "arial";
+  color: #000;
   letter-spacing: 2px;
   cursor: pointer;
   transition: 0.5s;
 }
-.join .inner table th input[type=reset]:hover, .join .inner table th input[type=submit]:hover {
+.join .inner #member table th input[type=reset]:hover, .join .inner #member table th input[type=submit]:hover {
   background: #333;
   color: #fff;
 }
-.join .inner table td {
-  border-left: 1px solid #aaa;
-}
-.join .inner table td input[type=text], .join .inner table td input[type=password], .join .inner table td select {
+.join .inner #member table td input[type=text], .join .inner #member table td input[type=password], .join .inner #member table td select {
   width: 60%;
-  background: rgba(0, 0, 0, 0.03);
+  background: rgba(104, 192, 214, 0.2);
   padding: 10px;
-  border: 1px solid #aaa;
+  border: 1px solid #fff;
 }
-.join .inner table td input[type=radio], .join .inner table td input[type=checkbox] {
+.join .inner #member table td input[type=radio], .join .inner #member table td input[type=checkbox] {
   margin-right: 30px;
 }
-.join .inner table td textarea {
+.join .inner #member table td textarea {
   resize: none;
   width: 60%;
   height: 150px;
@@ -1036,7 +1033,7 @@ table {
   padding: 10px;
   border: 1px solid #aaa;
 }
-.join .inner table td p {
+.join .inner #member table td p {
   font: 11px/1 "Gowun Dodum";
   color: hotpink;
   margin-top: 5px;

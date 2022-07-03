@@ -28,8 +28,6 @@ btnCall.addEventListener("click",(e)=>{
 
     btnCall.classList.toggle("on");
     menuMo.classList.toggle("on");
-    logo.classList.toggle("on");
-    copy.classList.toggle("on");
 
 })
 

@@ -62,9 +62,9 @@ if(pwd1.value==""){
     pwd2.focus();
     return false;}
 
-if(pwd1.value!=pwd2.value){
-    //비밀번호와 비밀번호확인의 값이 다를 경우
     
+if(pwd1.value!=pwd2.value){
+
     alert("입력한 2개의 비밀번호가 일치하지 않습니다.");
     pwd1.focus();
     return false;

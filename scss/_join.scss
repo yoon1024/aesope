@@ -186,46 +186,53 @@ table{border-collapse: collapse;}
     .inner{
         width: 1180px;
 
-        table{
-            border-bottom: 2px solid #333;
-            margin-top: 100px;
 
-            th,td{border-bottom: 1px solid #ddd; padding: 15px 25px;}
+        #member{
 
-            th{
-                width: 20%;
-               input[type=reset],input[type=submit]{
-                width: 30%; height: 40px;
-                border: 1px solid #333; margin: 10px;
-                font: bold 14px/40px 'Gowun Dodum'; color: #555; letter-spacing: 2px;
-                cursor: pointer; transition: 0.5s;
-                &:hover{
-                    background: #333; color: #fff;
+            table{
+                margin: 0 auto;
+                margin-top: 100px;
+    
+                th,td{
+                    border-bottom: 1px solid rgb(104, 192, 214); 
+                    padding: 15px 15px;
+                    color: #888;
                 }
-               }
-            }
-            td{
-                border-left: 1px solid #aaa;
-
-                input[type=text], input[type=password],select{
-                    width: 60%; background: rgba(0,0,0,0.03);
-                    padding: 10px; 
-                    border: 1px solid #aaa;
+    
+                th{
+                    width: 20%;
+                   input[type=reset],input[type=submit]{
+                    width: 30%; height: 40px;
+                    margin: 10px;
+                    font: bold 14px/40px 'arial'; color: #000; letter-spacing: 2px;
+                    cursor: pointer; transition: 0.5s;
+                    &:hover{
+                        background: #333; color: #fff;
+                    }
+                   }
                 }
-                input[type=radio], input[type=checkbox]{
-                    margin-right: 30px;
-                }
-                textarea{
-                    resize: none;
-                    width: 60%; height: 150px;
-                    background: rgba(0,0,0,0.03);
-                    padding: 10px;
-                    border: 1px solid #aaa;
-                }
-
-                p{
-                    font: 11px/1 "Gowun Dodum";
-                    color: hotpink; margin-top: 5px;
+                td{
+    
+                    input[type=text], input[type=password],select{
+                        width: 60%; background: rgba(104, 192, 214,0.2);
+                        padding: 10px; 
+                        border: 1px solid #fff;
+                    }
+                    input[type=radio], input[type=checkbox]{
+                        margin-right: 30px;
+                    }
+                    textarea{
+                        resize: none;
+                        width: 60%; height: 150px;
+                        background: rgba(0,0,0,0.03);
+                        padding: 10px;
+                        border: 1px solid #aaa;
+                    }
+    
+                    p{
+                        font: 11px/1 "Gowun Dodum";
+                        color: hotpink; margin-top: 5px;
+                    }
                 }
             }
         }
