@@ -1,0 +1,147 @@
+// .login {
+// 	width: 100%;
+// 	height: 100vh;
+// 	background: #eee;
+// 	position: relative;
+// 	overflow: hidden;
+// 	padding-top: 10vh;
+// 	.inner {
+// 		width: 1180px;
+// 		height: 80vh;
+// 		background: lightblue;
+// 		margin: 0 auto;
+// 		.con {
+// 			width: 100%;
+// 			height: 100%;
+// 			&::after {
+// 				content: '';
+// 				display: block;
+// 				clear: both;
+// 			}
+// 			.loginVisual {
+// 				width: 50%;
+// 				height: 100%;
+// 				float: left;
+// 				background: #efefef;
+// 			}
+// 			.loginInfo {
+// 				width: 50%;
+// 				height: 100%;
+// 				float: left;
+// 				position: relative;
+// 				h1 {
+// 					width: 100%;
+// 					font-size: 100px;
+// 					line-height: 1;
+// 					font-family: 'arial';
+// 					position: absolute;
+// 					top: 50%;
+// 					left: 50%;
+// 					transform: translate(-50%, -100%);
+// 				}
+// 				.loginBox {
+// 					position: absolute;
+// 					top: 50%;
+// 					left: 50%;
+// 					transform: translate(-50%, 50%);
+// 					.inputBox {
+// 						position: relative;
+// 						input[type='text'] {
+// 							width: 100%;
+// 							padding: 10px;
+// 							border: 1px solid lightblue;
+// 							border-radius: 5px;
+// 							color: blue;
+// 							font-size: 1em;
+// 							font-weight: bold;
+// 							font-family: 'arial';
+// 							margin-bottom: 10px;
+// 							&:valid ~ span,
+// 							&:focus ~ span {
+// 								color: aqua;
+// 								transform: translateX(10px) translateY(-7px);
+// 								font-size: 0.65em;
+// 								padding: 0 10px;
+// 								background: lightblue;
+// 								border-left: 1px solid aqua;
+// 								border-right: 1px solid aqua;
+// 							}
+// 						}
+// 						span {
+// 							position: absolute;
+// 							left: 0;
+// 							padding: 10px;
+// 							pointer-events: none;
+// 							font-size: 1em;
+// 							color: #000;
+// 							text-transform: uppercase;
+// 							transition: 0.5s;
+// 						}
+// 					}
+// 				}
+// 			}
+// 		}
+// 	}
+// }
+
+.login {
+	width: 100%;
+	height: 100vh;
+	padding-top: 100px;
+	.inner {
+		border: 1px solid #000;
+		width: 1180px;
+		height: 80vh;
+		margin: 0 auto;
+		position: relative;
+		.wrap {
+			width: 100%;
+			height: 100%;
+			.pic {
+				width: 100%;
+				height: 100%;
+				text-align: center;
+				position: relative;
+				background-color: #000;
+				img {
+					width: 100%;
+					height: 100%;
+					opacity: 0.8;
+				}
+				h1 {
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+					font-size: 100px;
+					font-family: 'Frank Ruhl Libre';
+					font-weight: 200;
+					line-height: 1;
+					color: #efefef;
+				}
+				a {
+					position: absolute;
+					bottom: 0;
+					right: 0;
+					font-size: 50px;
+					font-family: 'Frank Ruhl Libre';
+					font-weight: 200;
+					line-height: 1;
+					color: #efefef;
+				}
+			}
+			.loginInfo {
+				width: 500px;
+				height: 500px;
+				background: #efefef;
+				position: absolute;
+				right: -10%;
+				top: 5%;
+				h2 {
+					position: absolute;
+					top: 20%;
+				}
+			}
+		}
+	}
+}

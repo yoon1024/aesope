@@ -2504,6 +2504,68 @@ table {
     display: block;
   }
 }
+.login {
+  width: 100%;
+  height: 100vh;
+  padding-top: 100px;
+}
+.login .inner {
+  border: 1px solid #000;
+  width: 1180px;
+  height: 80vh;
+  margin: 0 auto;
+  position: relative;
+}
+.login .inner .wrap {
+  width: 100%;
+  height: 100%;
+}
+.login .inner .wrap .pic {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  position: relative;
+  background-color: #000;
+}
+.login .inner .wrap .pic img {
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+}
+.login .inner .wrap .pic h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 100px;
+  font-family: "Frank Ruhl Libre";
+  font-weight: 200;
+  line-height: 1;
+  color: #efefef;
+}
+.login .inner .wrap .pic a {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 50px;
+  font-family: "Frank Ruhl Libre";
+  font-weight: 200;
+  line-height: 1;
+  color: #efefef;
+}
+.login .inner .wrap .loginInfo {
+  width: 500px;
+  height: 500px;
+  background: #efefef;
+  position: absolute;
+  right: -10%;
+  top: 5%;
+}
+.login .inner .wrap .loginInfo h2 {
+  position: absolute;
+  top: 20%;
+}
+
 #header {
   width: 100%;
   height: 80px;
