@@ -804,6 +804,9 @@ table {
   top: 20px;
   left: 0;
 }
+#header_sub_join .inner .wrap a {
+  margin-left: 30px;
+}
 #header_sub_join .inner .wrap a img {
   width: 7vw;
   opacity: 0.8;
@@ -1496,6 +1499,9 @@ table {
   top: 20px;
   left: 0;
 }
+#header_sub_store .inner .wrap a {
+  margin-left: 30px;
+}
 #header_sub_store .inner .wrap a img {
   width: 150px;
   opacity: 0.8;
@@ -1797,6 +1803,9 @@ table {
   position: absolute;
   top: 20px;
   left: 0;
+}
+#header_sub_gallery .inner .wrap a {
+  margin-left: 30px;
 }
 #header_sub_gallery .inner .wrap a img {
   width: 150px;
@@ -2125,6 +2134,9 @@ table {
   position: absolute;
   top: 20px;
   left: 0;
+}
+#header_sub_brandstory .inner .wrap a {
+  margin-left: 30px;
 }
 #header_sub_brandstory .inner .wrap a img {
   width: 150px;
@@ -2511,7 +2523,7 @@ table {
 }
 #header .inner .wrap {
   position: absolute;
-  top: 25px;
+  top: 20px;
   left: 0;
 }
 #header .inner .wrap a {
