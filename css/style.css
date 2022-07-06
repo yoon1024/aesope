@@ -2776,24 +2776,6 @@ table {
 .product .inner .subtitle {
   border: 1px solid rgb(108, 112, 111);
 }
-.product .inner button {
-  font-family: "Spoqa Han Sans Neo", "sans-serif";
-  font-size: 15px;
-  line-height: 1;
-  letter-spacing: -0.02em;
-  color: #3f4150;
-  background-color: #fff;
-  border: none;
-}
-.product .inner button:focus,
-.product .inner button:active {
-  outline: none;
-  box-shadow: none;
-}
-.product .inner .title {
-  width: 200px;
-  margin-bottom: 16px;
-}
 .product .inner form {
   padding: 40px;
   background-color: #fff;
@@ -2801,63 +2783,91 @@ table {
 }
 .product .inner form h1 {
   margin-bottom: 8px;
-  font-size: 16px;
+  font-size: 30px;
   font-weight: 500;
   letter-spacing: -0.02em;
   color: #3f4150;
 }
-.product .inner .dropdown {
-  position: relative;
-  z-index: 1;
+.product .inner form .dropdown {
   width: 300px;
-  margin-bottom: 8px;
 }
-.product .inner .dropdown-toggle {
+.product .inner form .dropdown .dropdown-toggle {
   width: 100%;
   height: 50px;
-  padding: 0 16px;
+  padding: 0 10px;
   line-height: 50px;
-  color: rgba(133, 136, 150, 0.5);
+  color: #999;
   text-align: left;
   border: 1px solid rgba(224, 226, 231, 0.75);
-  border-radius: 6px;
-  transition: border-color 100ms ease-in;
-}
-.product .inner .dropdown-toggle.selected {
+  border-radius: 10px;
+  transition: 0.3s;
+  font-size: 15px;
+  line-height: 1;
   color: #3f4150;
-  border-color: rgb(224, 226, 231);
+  background-color: #fff;
 }
-.product .inner .dropdown-toggle:active {
-  border-color: rgb(224, 226, 231);
+.product .inner form .dropdown .dropdown-toggle.selected {
+  color: #000;
 }
-.product .inner .dropdown-menu {
+.product .inner form .dropdown .dropdown-menu {
   position: absolute;
+  left: 40px;
   z-index: 2;
-  top: calc(100% + 4px);
-  left: 0;
-  width: 100%;
+  width: 300px;
   max-height: 0;
   overflow: hidden;
   background-color: #fff;
-  border: 1px solid transparent;
-  border-radius: 6px;
-  transition: border-color 200ms ease-in, padding 200ms ease-in, max-height 200ms ease-in, box-shadow 200ms ease-in;
+  border-radius: 10px;
+  transition: 0.3s;
 }
-.product .inner .dropdown-menu.show {
-  padding: 8px 0;
-  max-height: 280px;
+.product .inner form .dropdown .dropdown-menu.on {
+  padding: 10px 0;
+  max-height: 300px;
   border-color: rgba(224, 226, 231, 0.5);
   box-shadow: 0 4px 9px 0 rgba(63, 65, 80, 0.1);
 }
-.product .inner .dropdown-option {
+.product .inner form .dropdown .dropdown-menu .dropdown-item {
   width: 100%;
-  height: 44px;
-  padding: 0 16px;
-  line-height: 44px;
-  text-align: left;
 }
-.product .inner .dropdown-option:hover {
+.product .inner form .dropdown .dropdown-menu .dropdown-item .dropdown-option {
+  width: 100%;
+  height: 40px;
+  padding: 0 10px;
+  line-height: 40px;
+  text-align: left;
+  font-size: 15px;
+  line-height: 1;
+  color: #888;
+  background-color: #fff;
+  border: none;
+}
+.product .inner form .dropdown .dropdown-menu .dropdown-item .dropdown-option:hover {
   background-color: #f8f9fa;
+}
+.product .inner .wrap {
+  width: 300px;
+}
+.product .inner .wrap .skin {
+  width: 100%;
+  display: none;
+}
+.product .inner .wrap .skin img {
+  width: 100%;
+}
+.product .inner .wrap .skin.on {
+  display: block;
+}
+.product .inner .wrap .lotion {
+  width: 100%;
+}
+.product .inner .wrap .lotion img {
+  width: 100%;
+}
+.product .inner .wrap .perfume {
+  width: 100%;
+}
+.product .inner .wrap .perfume img {
+  width: 100%;
 }
 
 #header {
