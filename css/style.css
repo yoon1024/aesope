@@ -2784,7 +2784,6 @@ table {
   color: #3f4150;
   background-color: #fff;
   border: none;
-  cursor: pointer;
 }
 .product .inner button:focus,
 .product .inner button:active {
@@ -2794,10 +2793,6 @@ table {
 .product .inner .title {
   width: 200px;
   margin-bottom: 16px;
-}
-.product .inner .title img {
-  width: 100%;
-  height: auto;
 }
 .product .inner form {
   padding: 40px;
@@ -2864,76 +2859,7 @@ table {
 .product .inner .dropdown-option:hover {
   background-color: #f8f9fa;
 }
-.product .inner .next-button {
-  display: block;
-  width: 100%;
-  height: 44px;
-  padding: 0 16px;
-  line-height: 44px;
-  color: #f8f9fa;
-  background-color: #1b1c32;
-  border-radius: 6px;
-  transition: background-color 150ms ease-in;
-}
-.product .inner .next-button:disabled {
-  background-color: #e0e2e7;
-  cursor: not-allowed;
-}
 
-@media screen and (max-width: 1179px) {
-  #header_sub_youtube {
-    width: 100%;
-  }
-  #header_sub_youtube .inner {
-    width: 100%;
-    height: 100%;
-  }
-  #header_sub_youtube .inner .wrap {
-    position: absolute;
-    top: 25px;
-    left: 50%;
-    transform: translateX(-50%);
-    transition: 0.5s;
-  }
-  #header_sub_youtube .inner .wrap a img {
-    width: 150px;
-  }
-  #header_sub_youtube .inner .menuWeb {
-    display: none;
-  }
-  #header_sub_youtube .inner .btnCall {
-    display: block;
-  }
-  .youtube .inner {
-    width: 100%;
-  }
-  .youtube .inner figure.pop {
-    width: 100%;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background: rgba(0, 0, 0, 0.8);
-    overflow: hidden;
-    padding: 5vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .youtube .inner figure.pop .btnClose {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    color: #fff;
-    cursor: pointer;
-    font-size: 50px;
-  }
-}
-@media screen and (max-width: 539px) {
-  .youtube .inner .vidList article .con p {
-    display: none;
-  }
-}
 #header {
   width: 100%;
   height: 80px;

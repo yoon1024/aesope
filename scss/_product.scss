@@ -232,7 +232,7 @@
 			color: #3f4150;
 			background-color: #fff;
 			border: none;
-			cursor: pointer;
+			// cursor: pointer;
 		}
 
 		button:focus,
@@ -245,12 +245,6 @@
 			width: 200px;
 			margin-bottom: 16px;
 		}
-
-		.title img {
-			width: 100%;
-			height: auto;
-		}
-
 		form {
 			padding: 40px;
 			background-color: #fff;
@@ -325,98 +319,6 @@
 
 		.dropdown-option:hover {
 			background-color: #f8f9fa;
-		}
-
-		.next-button {
-			display: block;
-			width: 100%;
-			height: 44px;
-			padding: 0 16px;
-			line-height: 44px;
-			color: #f8f9fa;
-			background-color: #1b1c32;
-			border-radius: 6px;
-			transition: background-color 150ms ease-in;
-		}
-
-		.next-button:disabled {
-			background-color: #e0e2e7;
-			cursor: not-allowed;
-		}
-	}
-}
-
-@media screen and (max-width: 1179px) {
-	#header_sub_youtube {
-		width: 100%;
-		.inner {
-			width: 100%;
-			height: 100%;
-			.wrap {
-				position: absolute;
-				top: 25px;
-				left: 50%;
-				transform: translateX(-50%);
-				transition: 0.5s;
-				a {
-					img {
-						width: 150px;
-					}
-				}
-			}
-			.menuWeb {
-				display: none;
-			}
-
-			.btnCall {
-				display: block;
-			}
-		}
-	}
-
-	.youtube {
-		.inner {
-			width: 100%;
-			figure.pop {
-				width: 100%;
-				height: 100vh;
-				position: fixed;
-				top: 0;
-				left: 0;
-				background: rgba(0, 0, 0, 0.8);
-
-				overflow: hidden;
-
-				padding: 5vw;
-				display: flex;
-				justify-content: center;
-				align-items: center;
-
-				.btnClose {
-					position: absolute;
-					top: 10px;
-					right: 10px;
-					color: #fff;
-					cursor: pointer;
-					font-size: 50px;
-				}
-			}
-		}
-	}
-}
-
-@media screen and (max-width: 539px) {
-	.youtube {
-		.inner {
-			.vidList {
-				article {
-					.con {
-						p {
-							display: none;
-						}
-					}
-				}
-			}
 		}
 	}
 }
